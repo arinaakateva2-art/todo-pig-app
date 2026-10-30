@@ -1,0 +1,126 @@
+body {
+    background-color: #fff0f5 !important; 
+    color: #4a3b40;
+}
+
+.navbar-brand {
+    color: #5c2e34 !important;
+    font-weight: 600; 
+}
+
+.navbar-brand:hover, 
+.navbar-brand:focus {
+    color: #5c2e34 !important;
+}
+
+.task-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1px solid #ffd1dc; 
+    border-left: 5px solid #ccc; 
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.task-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.15);
+}
+
+.status-pending { border-left-color: #5c2e34 !important; } 
+.status-in-progress { border-left-color: #e29a9a !important; } 
+.status-done { border-left-color: #912259 !important; } 
+
+.task-done-text {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.badge-status {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+
+.bg-pink-header {
+    background-color: #ffb6c1 !important; 
+}
+
+.btn-pink {
+    background-color: #ffb6c1 !important; 
+    color: #5c2e34 !important; 
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-pink:hover {
+    background-color: #ff9eb0 !important; 
+    color: #5c2e34 !important;
+}
+
+.btn-pink-save {
+    background-color: #ffb6c1 !important;
+    color: #5c2e34 !important;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.btn-pink-save:hover {
+    background-color: #ff9eb0 !important;
+    color: #5c2e34 !important;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #ffb6c1 !important;
+    box-shadow: 0 0 0 0.25rem rgba(255, 182, 193, 0.25) !important;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    
+    background-image: 
+        url('bg-pig1.png'), 
+        url('bg-pig2.png'), 
+        url('bg-pig3.png'), 
+        url('bg-pig4.png'),
+        url('bg-pig5.png');
+    
+    background-size: 
+        60px, 
+        80px, 
+        50px, 
+        70px, 
+        60px;
+    
+    background-repeat: repeat;
+    
+    background-position: 
+        0 0, 
+        50% 50%, 
+        100% 100%, 
+        20% 80%, 
+        80% 20%;
+    
+    opacity: 0.40; 
+    mix-blend-mode: multiply; 
+    
+    z-index: -1; 
+    pointer-events: none; 
+    
+    background-attachment: scroll; 
+}
+
+@media (max-width: 576px) {
+    .col-md-6.text-end {
+        text-align: left !important;
+        margin-top: 10px;
+    }
+}
